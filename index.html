@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies project</title>
+    <link rel="stylesheet" href="./src/pages/index/css/style.css">
+    <link rel="shortcut icon" href="./src/assets/favicon1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./src/components/carousel/css/index.css">
+    <link rel="stylesheet" href="./src/components/animations/css/animations.css">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="nav container">
+            <a href="index.html" target="_self" class="logo" rel="noopener noreferrer">
+                Marins <span>Movies</span>
+            </a>
+            <div class="search-box">
+                <input type="search" id="search-input" placeholder="buscar filme">
+                <i class='bx bx-search'></i>
+            </div>
+            <a href="#" class="user">
+                <img src="src/assets/user/EmersonMarins3x4.png" alt="" class="user__img"/>
+            </a>
+            <div class="navbar">
+                <a href="#" class="navbar__link page__home" bt="btn">
+                    <i class='bx bx-home' bt="btn"></i>
+                    <span class="navbar__link__title" bt="btn">Home</span>
+                </a>
+                <a href="#" class="navbar__link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="navbar__link__title">Tendencia</span>
+                </a>
+                <a href="#" class="navbar__link">
+                    <i class='bx bx-compass'></i>
+                    <span class="navbar__link__title">Explorar</span>
+                </a>
+                <a href="#" class="navbar__link">
+                    <i class='bx bx-camera-movie'></i>
+                    <span class="navbar__link__title">Filmes</span>
+                </a>
+                <a href="#" class="navbar__link">
+                    <i class='bx bx-calendar-star'></i>
+                    <span class="navbar__link__title">Favoritos</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="home container">
+        <div class="is-background">
+            <img src="./src/assets/banners/home.jpg" alt="imagem filme" class="home__img"/>
+        </div>
+        <div class="home__info">
+            <h1 class="home__title">Jogos Vorazes </h1>
+            <span>A Cantiga dos Pássaros e das Serpentes</span>
+            <i class='bx bxs-right-arrow'> Ver trailer</i>
+        </div>
+    </section>
+    <section class="carousel aventura container">
+        <div class="rectangle">
+            <h1 class="carousel__title">AVENTURA</h1>
+
+        </div>
+
+        <section class="section04" oncontentvisibilityautostatechange="click()">
+            <!-- <div class="section04__title">Novidade Imperdíveis</div> -->
+            <div class="section04__content">
+                
+            </div>
+        </section>
+    </section>
+    <section class="filmeplay container is-hidde">
+        <section class="home container playvideo"></section>
+        <section class="home container play">
+            <img src="./src/assets/backgrounds/background02.jpg" alt="imagem filme" class="home__img filmeplay__img">
+            <div class="home__info filmeplay__info">
+                <h1 class="home__title"></h1>
+                <span></span>
+                <i class='bx bxs-right-arrow'></i>
+            </div>
+        </section>
+        <span class="border"></span>
+        <section class="info">
+            <img class="info__img" src="https://image.tmdb.org/t/p/w185/xUvSeFhdsJbKFOaHnB9TeTZpJKs.jpg" alt="">
+            <div class="info__content">
+                <h1 class="info__title">O Último Reino: Sete Reis Devem Morrer</h1>
+                <div class="info__filme">
+                    <p class="info__data">Apr. 14, 2023</p>
+                    <p class="info__oringe">United Kingdom</p>
+                    <p class="info__duraction">101 Min.</p>
+                </div>
+                <div class="info__avaliations">
+                    <span class="info__note">5</span>
+                    <div class="section04__info-stars">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <span class="info__your-avaliation">Sua avaliação: 0</span>
+                </div>
+                
+                <span class="info__gender">Ação Aventura Drama Guerra História</span>
+                
+            </div>
+        </section>
+        <span class="border"></span>
+        <section class="info__sinopse">
+            <h3>Sinopse</h3>
+            <span>Wendy Darling, uma jovem que não quer ir para o colégio interno, conhece Peter Pan, um menino que se recusa a crescer. Com seus irmãos e uma fada, Tinker Bell, ela viaja com Peter para o mundo mágico da Terra do Nunca. Lá, ela encontra o pirata perverso, Capitão Gancho, e embarca em uma aventura emocionante que vai mudar sua vida para sempre.</span>
+        </section>
+    </section>
+
+    <script type="module" src="src/index.js"></script>
+
+    </body>
+</html>

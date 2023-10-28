@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:wght@200;300;400;500;600;800;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --body-color: #232323;
+    --main-color: rgb(253, 192, 78);
+    --hover-color: rgb(172, 112, 0);
+    --container-color: #333333;
+    --text-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background: var(--body-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 50;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.search-box {
+    max-width: 240px;
+    padding: 7px 14px;
+    background-color: var(--container-color);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    column-gap: 0.7rem;
+}
+
+.search-box .bx:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#search-input {
+    background-color: var(--container-color);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.user {
+    display: flex;
+}
+
+.user__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1em;
+}
+
+.navbar__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(197, 197, 197);
+    font-weight: 300;
+    font-size: 0.9em;
+
+}
+
+.navbar__link:hover,
+.nav-active {
+    color: var(--text-color);
+    transform: scale(1.1);
+
+}
+
+.navbar__link>.bx {
+    font-size: 1.7em;
+}
+
+.home {
+    position: relative;
+    margin-top: 80px;
+}
+
+.home__img {
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.is-background {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    margin: auto;
+    height: calc(100vw/3);
+    background: rgb(0, 0, 0);
+    
+}
+
+.home .home__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+    align-items: end;
+    text-align: center;
+    position: absolute;
+    padding: 20px 40px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.filmeplay .home__info {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+
+}
+
+.home__title {
+    text-align: center;
+    font-size: 1.7em;
+    padding-right: 3%;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500 !important;
+
+}
+
+.home__info>span {
+    font-size: 1em;
+    font-weight: 100;
+    text-align: center;
+    color: var(--main-color);
+
+}
+
+.home > .home__info > .bx {
+    /* font-size: 9.2em; */
+    /* text-align: center; */
+    /* padding-right: 5%; */
+    /* padding-top: 3px; */
+    color: rgb(19, 19, 19);
+    /* width: 170px; */
+    /* height: 43px; */
+    padding: 10px;
+    /* margin-top: 5px; */
+    border-radius: 5px;
+    background-color: #dfdfdf;
+    font-weight: 900;
+    animation: pulse 1.1s infinite ease-in-out;
+}
+
+.home__info > .bx:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: var(--hover-color);
+    /* background-color: var(--text-color); */
+
+}
+
+.filmeplay .home__info > .bx {
+    font-size: 7em;
+    /* text-align: center; */
+    /* padding-right: 5%; */
+    /* padding-top: 3px; */
+    color: rgb(216, 216, 216);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.404);
+    /* width: 170px; */
+    /* height: 43px; */
+    padding: 10px;
+    /* margin-top: 5px; */
+    border-radius: 5px;
+    background-color:  rgba(255, 255, 255, 0.014);
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.418);
+    font-weight: 900;
+    animation: pulse 1.1s infinite ease-in-out;
+}
+.carousel__title {
+
+    position: absolute;
+    /* top: 0; */
+    /* padding: 10px 30px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    /* font-size: medium; */
+    /* border-radius: 15px; */
+    /* border-bottom: 1px solid #000000a2; */
+    z-index: 1;
+}
+
+@media only screen and (max-width : 550px)
+{ 
+    .carousel__title {
+        font-size: 17px;
+    }
+}
+
+/* States  */
+
+.is-hidde {
+    display: none !important;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* Page of film  */
+
+.play, .playvideo {
+    height: calc(100vw / 2);
+}
+
+.filmeplay .border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+.filmeplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+}
+
+.filmeplay .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.filmeplay .info__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filmeplay .info__img {
+    margin-left: 10px;
+    width: 150px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.699);
+}
+
+.filmeplay .info__title{
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.info__filme {
+    display: flex;
+    gap: 30px;
+    font-size: .7em;
+    font-weight: 200;
+    color: rgb(207, 207, 207);
+}
+
+.filmeplay .info__avaliations{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filmeplay .info__note {
+    font-size: 2.3rem;
+    background-color: #101010;
+    width: 56px;
+    text-align: center;
+    color: var(--main-color);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.445);
+}
+
+.filmeplay .section04__info-stars {
+    font-size: 2rem;
+}
+
+.filmeplay .section04__info-stars > .bx {
+    color: rgb(94, 94, 94);
+}
+
+.filmeplay .section04__info-stars > .bx:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.filmeplay .info__your-avaliation {
+    background-color: #101010;
+    width: 150px;
+    text-align: center;
+    height: 42px;
+    padding: 8px 0;
+    flex-grow: 1;
+    border-radius: 5px;
+    font-weight: 100;
+    
+}
+
+.filmeplay .info__gender {
+    font-weight: 100;
+    word-spacing: 20px;
+}
+
+.filmeplay .info__sinopse {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.filmeplay .info__sinopse > h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.filmeplay .info__sinopse > span{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #a1a1a1
+}

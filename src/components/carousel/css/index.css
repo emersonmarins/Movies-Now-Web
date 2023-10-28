@@ -1,0 +1,123 @@
+.section04__title {
+  font-size: calc(var(--font-step-0) * 1.2);
+  color: rgb(221, 112, 72);
+}
+.section04__content {
+  display: flex;
+  flex-direction: row;
+  margin: 35px 0;
+}
+.section04__content .bi {
+  font-size: 12px;
+}
+.section04__content .section04__product-content {
+  width: calc(20.8333333333vw - 30px + 7.5px);
+  height: 25vw;
+  position: relative;
+  margin-right: 30px;
+}
+@keyframes animate {
+  0% {
+    opacity: 0.2;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes animate-out {
+  0% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  100% {
+    opacity: 0.2;
+    transform: rotateY(90deg);
+  }
+}
+@media (max-width: 900px) {
+  .section04__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .section04__content .section04__product-content {
+    width: calc(27.7777777778vw - 30px + 10px);
+    height: 30.8583333333vw;
+  }
+}
+@media (max-width: 700px) {
+  .section04__content .section04__product-content {
+    width: calc(46.6666666667vw - 30px + 15px);
+    height: 53.245vw;
+  }
+}
+.section04__wrapper-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.section04__product-img, .section04__product-img-clone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.527);
+}
+.section04__product-img:hover, .section04__product-img-clone:hover {
+  cursor: grabbing;
+}
+.section04__product-content {
+  text-align: center;
+}
+.section04__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.section04__info-stars .bi-star-fill,
+.section04__info-stars .bi-star-half {
+  color: orange;
+}
+
+@media (max-width: 690px) {
+  .section04-content-wrapper {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr);
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+  .section04-nav > a {
+    background-color: rgb(245, 245, 245);
+    padding: 3px 7px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: black;
+  }
+}
+.section04-product-wrapper {
+  /* background-color: chartreuse; */
+  /* padding: 20px; */
+}
+
+.section04-product-content {
+  position: relative;
+}
+
+.section04-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  top: 7px;
+  right: 7px;
+}
+
+.section04-nav > a {
+  background-color: rgb(245, 245, 245);
+  padding: 5px 9px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: black;
+}
